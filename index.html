@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>AR-RobotExpressive</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<style media="screen">
+  * {
+    margin: 0;
+    padding: 0;
+
+
+  }
+
+  body {
+    background-image: url("https://images.unsplash.com/photo-1612626360035-324ebf7d27f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+
+  }
+
+  .ani {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .ani model-viewer {
+    height: 100%;
+    width: 100%;
+  }
+</style>
+
+<body>
+
+  <div class="ani">
+    <model-viewer src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" ios-src="https://modelviewer.dev/shared-assets/models/RobotExpressive.usdz" auto-rotate camera-controls animation-name="Running" shadow-intensity="5" autoplay
+      ar></model-viewer>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
